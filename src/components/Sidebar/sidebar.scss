@@ -1,0 +1,23 @@
+.sidebar {
+  &-container {
+    background: rgba(255, 238, 202, 1);
+    max-width: 160px;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    & nav {
+      margin-top: 134px;
+      & li a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 34px 0;
+        color: rgb(255, 206, 96);
+      }
+    }
+  }
+}
+
+.sidebar-nav-link {
+  background-color: #fff;
+}

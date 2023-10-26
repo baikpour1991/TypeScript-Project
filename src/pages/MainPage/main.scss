@@ -1,0 +1,18 @@
+.content {
+  width: 100%;
+  margin-left: 208px;
+  padding-right: 46px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 39px;
+    margin-bottom: 36px;
+    & h1 {
+      color: rgba(235, 192, 96, 1);
+      font-size: 48px;
+      font-family: 'MontserratBold';
+      line-height: 1.2;
+      text-transform: uppercase;
+    }
+  }
+}

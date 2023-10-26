@@ -1,0 +1,53 @@
+{
+  "name": "ts-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "test": "vitest --passWithNoTests",
+    "lint": "eslint src --ext js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "test:run": "vitest run --passWithNoTests",
+    "preview": "vite preview",
+    "prepare": "husky install"
+  },
+  "engines": {
+    "npm": "please-use-yarn",
+    "yarn": ">= 1.22.19"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.44.3",
+    "react-router-dom": "^6.12.1",
+    "sass": "^1.63.3",
+    "uuidv4": "^6.2.13",
+    "yup": "^1.2.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@testing-library/user-event": "^14.4.3",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@typescript-eslint/eslint-plugin": "^5.60.0",
+    "@typescript-eslint/parser": "^5.60.0",
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.43.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.3.4",
+    "husky": "^8.0.0",
+    "jsdom": "^21.1.1",
+    "prettier": "^2.8.8",
+    "typescript": "^5.2.2",
+    "vite": "^4.3.2",
+    "vite-plugin-checker": "^0.6.1",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vitest": "^0.30.1"
+  }
+}

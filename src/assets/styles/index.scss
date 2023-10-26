@@ -1,0 +1,59 @@
+@import './fonts';
+@import './input';
+@import './buttons';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat';
+}
+
+.main {
+  &-container {
+    display: flex;
+    height: 100%;
+  }
+}
+
+.error-message {
+  margin-top: 5px;
+  color: rgb(239, 42, 42);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 14px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(235, 192, 96, 1);
+  border-radius: 14px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: darken($color: rgba(235, 192, 96, 1), $amount: 30);
+}

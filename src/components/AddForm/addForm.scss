@@ -1,0 +1,103 @@
+.form {
+  &__block {
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  &__ingredient {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__button {
+    &-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+    &--add-button {
+      margin-top: 32px;
+      font-family: 'Montserrat';
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1.2;
+      letter-spacing: 0em;
+      text-align: left;
+      color: rgba(235, 192, 96, 1);
+      background-color: transparent;
+      border: none;
+      &:hover {
+        cursor: pointer;
+      }
+
+      &--disabled {
+        color: rgba(175, 177, 192, 0.5);
+      }
+    }
+  }
+}
+
+.recipe {
+  width: 100%;
+  color: rgba(175, 177, 192, 1);
+
+  &-label {
+    display: flex;
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    color: rgba(175, 177, 192, 1);
+  }
+
+  &__title {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 48px;
+  }
+
+  &__cooking {
+    &-time {
+      &-wrapper {
+        display: flex;
+        align-items: center;
+        & span {
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+
+  &__ingredient {
+    width: 100%;
+    max-width: 500px;
+    margin-right: 48px;
+    &-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    &--list {
+      margin-top: 16px;
+    }
+  }
+
+  &__quantity {
+
+    &-container {
+      display: flex;
+      align-items: center;
+    }
+
+    &-wrapper {
+      display: flex;
+    }
+
+    &--ingredient--list {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.recipe {
+  &-list {
+    margin-bottom: 48px;
+    width: 100%;
+    & h2 {
+      font-size: 36px;
+      line-height: 1.2;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+    }
+    &-wrapper {
+      flex-wrap: wrap;
+      display: flex;
+      gap: 36px;
+      width: 100%;
+      z-index: 1;
+    }
+  }
+}

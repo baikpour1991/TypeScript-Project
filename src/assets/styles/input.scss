@@ -1,0 +1,73 @@
+.input {
+  &-wrapper,
+  &-field {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    width: 100%;
+    color: #afb1c0;
+
+    & label {
+      margin-bottom: 16px;
+    }
+  }
+
+  &-field {
+    box-sizing: border-box;
+    font-size: 24px;
+    padding: 21px;
+    border: 2px solid rgba(175, 177, 192, 0.5);
+    border-radius: 10px;
+    color: rgba(68, 69, 79, 1);
+
+    &:hover {
+      outline: 2px solid #afb1c0;
+    }
+
+    &:focus-visible {
+      outline: 2px solid #afb1c0;
+    }
+    &::placeholder {
+      color: rgba(175, 177, 192, 0.5);
+    }
+
+    &--title {
+      margin-right: 48px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    &--description {
+      resize: none;
+    }
+
+    &--ingredients {
+      margin-right: 48px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    &--quantity {
+      max-width: 76px;
+      padding: 22px 4px;
+      text-align: center;
+      margin-right: 16px;
+    }
+
+    &--disabled {
+      background-color: #afb1c0;
+    }
+
+    &--quantity {
+      &-type {
+        max-width: 116px;
+        padding-left: 5px;
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -1,0 +1,109 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background: rgba(68, 69, 79, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: none;
+  transition: 0.5s;
+  color: #fff;
+
+  &:hover {
+    cursor: pointer;
+    background: rgba(68, 69, 79, 0.25);
+    color: rgba(175, 177, 192, 1);
+  }
+
+  &__edit {
+    color: #fff;
+    transition: 0.5s;
+    & svg {
+      border-radius: 10px;
+      width: 32px;
+    }
+    &:hover {
+      color: rgba(64, 223, 147, 1);
+      background: rgba(64, 223, 147, 0.15);
+    }
+  }
+
+  &__delete {
+    color: #fff;
+    transition: 0.5s;
+    &:hover {
+      color: rgba(255, 0, 0, 1);
+      background: rgba(255, 0, 0, 0.1);
+    }
+
+    &--ingredient {
+      margin-left: 8px;
+    }
+  }
+
+  &__favorite {
+    color: #fff;
+    transition: 0.5s;
+    &:hover {
+      color: rgba(255, 206, 96, 1);
+      background: rgba(255, 238, 202, 1);
+    }
+    &--active {
+      color: rgba(255, 206, 96, 1);
+      background: rgba(255, 238, 202, 1);
+      &:hover {
+        background-color: rgba(255, 176, 0, 1);
+        color: #fff;
+      }
+    }
+  }
+
+  &__add {
+    background-color: rgba(255, 206, 96, 1);
+    color: #fff;
+    font-family: 'MontserratBold';
+    font-size: 24px;
+    line-height: 1.2;
+    width: auto;
+    padding: 16px 24px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    &:hover {
+      background: rgba(255, 176, 0, 1);
+      color: #fff;
+    }
+  }
+
+  &__close-modal {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background-color: none;
+    color: rgba(175, 177, 192, 1);
+    &:hover {
+      background-color: rgba(68, 69, 79, 0.1);
+      color: #fff;
+    }
+  }
+
+  &__confirm {
+    color: #fff;
+    font-family: 'MontserratBold';
+    font-size: 24px;
+    line-height: 1.2;
+    width: auto;
+    padding: 16px 24px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    margin-right: 24px;
+    &--active {
+      background-color: rgba(255, 206, 96, 1);
+      margin-right: 0;
+      &:hover {
+        background: rgba(255, 176, 0, 1);
+      }
+    }
+  }
+}
